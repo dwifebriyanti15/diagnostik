@@ -1,0 +1,178 @@
+body {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: #EB455F;
+  color:#FCFFE7;
+}
+
+.dark .navbar{
+  background-color: #032B2F, 0;
+  backdrop-filter: blur(20px);
+}
+.dark .navbar .logo a{
+    color: #FCFFE7;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #FCFFE7;
+    transition: all 0.3s ease;
+}
+.dark .navbar .menu li a{
+  color: #D0D3C5;
+}
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.dark .materi .title,
+.saya .title, .partner .title, .about .title, .contact .title{
+    background: #EB455F;
+    border-radius: 20px;
+}
+.dark .materi .content,
+.saya .content, .partner .content, .about .content{
+    background: #EB455F;
+    border-radius: 20px;
+}
+.dark .contact{
+  color: white
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 50px 0 10px 0;
+}
+
+a {
+  color:rgba(26, 26, 26, 1);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.dark a {
+  color:#BAD7E9;
+}
+
+.dark {
+  background-color: #032B2F;
+  transition: 0.3s;
+}
+
+.moon {
+
+  width: 20px;
+  height: 20px;
+  box-shadow: inset;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+.dark > * {
+ color:black;
+}
+
+.main {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+
+.square {
+  width: 98%;
+  margin: 1%;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.dark .square {
+  background-color: rgb(71, 71, 71);
+}
+
+.sub-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+
+.cube:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+.dark footer {
+    display: flex;
+    justify-content: center;
+    background-color: #55B1BF;
+}
+.dark footer span, .dark footer span a {
+  background-color: #55B1BF;
+}
+
+.dark .location-text{
+  color: white;
+}
+
+
+@media only screen and (min-width: 970px) {
+  .main-text {
+    width: 50%;
+  }
+
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
+  }
+}

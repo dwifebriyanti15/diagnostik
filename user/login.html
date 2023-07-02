@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Diagnostik Siswa</title>
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!----dark mode---->
+    <link rel="stylesheet" href="/darkmode/darkmode.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">  
+</head>
+  <div class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="#" id="logo">Fisika</a>
+         <div class="logo-small">Website Diagnostik Siswa</div></div>
+            <div class="switch">
+              <div class="flicker"></div>
+              <div class="moon"></div>
+    </div>
+  </div>
+   <body>
+        <form class="modal-content animate" action="login.php" method="post" autocomplete="off">
+          <div class="imgcontainer">
+            <img src="/img/avatar.png" alt="Avatar" class="avatar">
+          </div>
+          
+          <div class="container">
+            
+            <input class="input" type="text" placeholder="Masukkan Username" name="uname" oninvalid="setCustomValidity('Username harus antara 3-20 karakter dan tidak menggunakan simbol')" maxlength="20">
+           
+            <input class="input" type="password" placeholder="Masukkan Password" name="psw" oninvalid="setCustomValidity('Password harus diisi dengan kombinasi angka & huruf, antara 6-20 karakter')" oninput="setCustomValidity('')" minlength="6" maxlength="20" required>
+           <button type="submit">Login</button>
+            <br><br>
+            <div class="forgot"><a href="#">Lupa password?</a></div>
+            <div class="signup">
+              Tidak punya akun? Silahkan <a href="#daftar">Daftar </a>
+            </div>
+          </div>
+        </form>
+ </body>
+ <script src="/js/main.js"></script>
+</html>
